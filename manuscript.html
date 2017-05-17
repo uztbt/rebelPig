@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>manuscript</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-06-03 10:22:30 JST"/>
+<meta name="author" content="Yuji Tabata"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">manuscript</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 豚さんのくせに生意気だ </a>
+<ul>
+<li><a href="#sec-1.1">1.1 独り言 </a></li>
+<li><a href="#sec-1.2">1.2 進捗状況 </a></li>
+<li><a href="#sec-1.3">1.3 coding tips </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 ちょっと困ったこと。 </a></li>
+<li><a href="#sec-1.3.2">1.3.2 開発で重要だったこと </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 心残りなこと </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 豚さんのくせに生意気だ </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> 独り言 </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>「ぶたさんのくせになまいきだ」の作者の田端です。
+今回の作品は初めて自分で作ったソフトだったりします。
+(というのも去年の作品は「龍神録の館」様からそのほとんどのシステムをもらってきたものだったのです。)
+最後(の予定)のスイラン祭なので自力で作ってみました。
+</p>
+<p>
+今回のゲームの元ネタは言わずと知れたあのゲームです。
+このゲームにハマったときから「これは簡単に作れるなぁ」なんて思ってました。
+しかしそのアイディアもスイラン祭18日前まで忘れていました。
+それまで、作品を作ろうと試みる度に挫折していましたが、「ぶたさん」を思い出した時から自分でも驚くほどの早さで作品を書き上げました。
+挫折した作品で大きいものは「海猿」という名前の海軍ゲームです。
+「海猿」はC++/SDLで書いていましたが、結局C++の生産性の低さを痛感しただけでした。
+一方「ぶたさん」はpython/pygameで書いています。
+自分はC/DxLib歴が長かったのでpygameのspriteやrectの概念を理解するのに時間がかかりましたが、一旦理解しまってからはこの上ない使いやすさを感じています。
+</p>
+<p>
+今まで使ったなかで一番おもしろかった言語はLispの方言の一つであるGaucheです。
+Gaucheを学び始める前にもEmacsLispをEmacsをセッティングするために「コピペ」していたので、Lispにはすんなり馴染めました。
+Emacsを使ってるとelispの強力さを知るだけに、Lispを学びたくなりますね。
+腰を入れてGaucheを学び始めたらLispの特徴的な記法と、それまで避けてきた再帰法が大好きになりました。
+特に再帰法は拙者にプログラムを考えて書く喜びをくれました。
+「ハッカーになろう」のEric S.Raymondさんもいうように「それをモノにしたときの悟り体験」を経験した気がします。
+再帰法は「ぶたさん」のプログラムのなかの、Pig.search()で使われています。
+でもやはり再帰の書き方としてはLispの方がpythonより自然に書けるので好きです。
+Lispの「全て値を返す」システムも好きです。
+これが再帰を自然に書くための重要な要素だと思います。
+pythonとかCだと一々returnを書かないといけないので煩雑です。
+</p>
+<p>
+そんな大好きなGaucheで作品を書こうと思いましたが、兎にも角にもGUIのライブラリに関するドキュメントが少なすぎるのでダメでした。
+C言語のライブラリをGaucheで使えるようにしてくれるソフトとかも試しましたがダメでした。
+「ハッカーと画家」みたいに普通の奴らの上を行ってやろうと思いましたが、今の自分には不可能でした。
+あれこれしているうちに時間が過ぎてしまったので、早くかけるpythonで書くことになった、といういきさつです。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> 進捗状況 </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<p>5/17 ブロックを表示させた
+5/18 ツルハシを表示させた
+5/19 豚さん発狂
+5/20 寝た
+5/21 豚さんのために経路探索プログラムを書く(進行中)
+5/22 12時間ぶっ通しプログラミングをする
+5/23 課題を6時間やったけど終わらなかった
+5/24 経路探索プログラムをリフォームした
+5/25 経路探索プログラムを肯定的に解決。
+5/26 やっぱり経路探索が上手く行っていなかったので書き直す。
+5/27 経路探索を今日もまた書き直す。スライムを動かせた。
+5/28 経路探索を幅優先探索をメインにする(途中)。養分を移動させた。
+5/29 今日のところは、経路探索は放っておく。スライムと豚に攻撃させた。画像が間に合わないかもしれないという不安が募る。
+5/30 物理部員が大方集結。みんなで作業したら早くて早くてとても助かった。希望が持てる。cxfreeze main.py で冷凍してみた。
+5/31 ガジガジ系を一応プログラム
+6/1  ガジガジ系を本格実装
+6/2  ラッピー実装。サナギ調整。魔分系の魔物を軽く実装。
+6/3  ステージの概念を入れる。
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> coding tips </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> ちょっと困ったこと。 </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+<ol>
+<li>
+リストは参照渡し
+</li>
+</ol>
+
+<p>ツルハシの座標のリストをdead<sub>cell</sub><sub>listに渡したらおかしくなった。理由は参照渡しだったから。</sub>
+pythonでリストを渡すと参照渡しになってしまう。
+しかたがないので
+</p>
+
+
+<pre class="example">dead_cell_list.append(self.point)
+</pre>
+
+
+
+<p>
+とする代わりに
+</p>
+
+
+<pre class="example">dead_cell_list.append([self.point[0],self.point[1]])
+</pre>
+
+
+
+<p>
+としたら上手くいった。
+</p>
+<ol>
+<li>
+IndexError: list index out of range
+</li>
+</ol>
+
+<p>こんなエラーが出たら見直すんだ。
+リストをイコールでバインドしてないかって。
+リストをイコールで結びたいときは、大抵appendをしたいはずだ。
+</p>
+<ol>
+<li>
+リストの深さに苦しんでる
+</li>
+</ol>
+
+<p>そんな時はappendとextendの違いに着目して使い分けよう。
+感覚的には append だと深く, extend だと浅く連結するよ。
+悩んだら両方を試してみてね。
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> 開発で重要だったこと </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+<ol>
+<li>
+豚の移動
+</li>
+</ol>
+
+<p>豚の移動はPig.searchで行き先のリストを作り、Pig.walkで実際に位置を変えています。
+重要なのはPig.searchの方です。
+この関数は再帰処理で最終目標にたどり着くことを底にしています。
+難しかったのは道が分かれているときの処理です。
+道が分かれるポイントでは、その座標を記録しておいて、袋小路に陥ったときには記録しておいた座標を一時的な目標としてPig.search関数を呼び出すことで最近の分かれるポイントまで戻ります。
+しかし豚の特性として、「UP,RIGHT,DOWN,LEFT」の順に移動可能かどうか調べるのですが、そうすると無限ループが発生したりします。(どのような状況で無限ループになるか考えてみてください)
+ですから、道が分かれるときは実際に行った方向の優先順位を最下位にすることで、無限ループが起こらないようにしています。
+</p><pre class="example">
+例)
+現在の座標、第一移動候補、第二移動候補、第三移動候補
+before [[1,0],[2,0],[1,1],[0,1]]
+after  [[1,0],[1,1],[0,1],[2,0]]
+[2,0]へ移動する。
+</pre>
+
+<p>追記
+実は豚の移動はこの方法ではリリースしていない。
+色々試した結果、どうも「幅優先探索」を改造したものと、何かを組み合わせることにした。
+前の直近の分岐まで戻るのに不自然にも行きと同じ経路を通ってしまうことを防ぐためだ。
+ただし、直近の分岐までの距離が長いときは別の方法で戻っている。
+</p>
+<ol>
+<li>
+養分の移動
+</li>
+</ol>
+
+<p>実はこれも手間取った。
+スライムのまわりのセルの養分をマイナス1する処理が、消えているセルの養分をマイナス1していたのが原因だった。
+around<sub>dead</sub><sub>cell</sub><sub>make</sub> 関数と around<sub>alive</sub><sub>cell</sub><sub>make</sub> 関数を作ることでプログラマがわかりやすくコーディング出きるようにすることで解決した。
+時間が無いからといって、超絶技巧を凝らして作ったロジックは直すときに大変。
+結局、わかりやすくプログラムを書くのが一番早くかけるのかも。
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> 心残りなこと </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<p>後輩には、C言語よりかなり高級なpythonを常々勧めていましたが、どうやら心を動かしきれなかったみたいで、C言語系から離れてくれませんでした。
+拙者がC言語を一つ下の後輩に教えてから、事実上、物理部の公用語になったみたいですが、Cだけじゃなく色々試してほしいなぁ、と思います。
+C言語こそ、シェアがあるだけに日本語ドキュメントが多いですが、それ以外の言語について調べようとすると、英語サイトを読む必要に迫られることが良くありました。
+しかし技術系のサイトに使われている英語は簡単なので、その英語も読む習慣がついてくれるといいなぁって思います。
+プログラミング言語はCだけじゃないんだぜ！！
+それから、できるだけ早くOSをUnixベースのもの(できればDebian/Linux)にしてみてほしいです。
+そしてEmacsを使ってほしい、先人の書いたコードを読んでほしい。無限の可能性を感じてほしいです。
+</p></div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Yuji Tabata
+<a href="mailto:yuji@debian">&lt;yuji@debian&gt;</a>
+</p>
+<p class="date"> Date: 2011-06-03 10:22:30 JST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
